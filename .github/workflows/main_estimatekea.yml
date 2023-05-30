@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'estimatekea'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B5C893B07ACD42DB9C35A1800043D934 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AAD0F205243E41048DB99538494B49E7 }}
           package: '*.jar'
