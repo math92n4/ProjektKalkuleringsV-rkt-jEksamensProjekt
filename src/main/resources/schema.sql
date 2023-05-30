@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS users_projects (
                                 FOREIGN KEY (projectid) REFERENCES project(projectid)
 );
 
-CREATE table IF NOT EXISTS subproject (
+CREATE TABLE IF NOT EXISTS subproject (
                             subprojectID INT PRIMARY KEY AUTO_INCREMENT,
                             subprojectName VARCHAR(255) NOT NULL,
                             description TEXT,
@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS users_subprojects (
                                    FOREIGN KEY (subprojectID) REFERENCES subproject(subprojectID)
 );
 
-CREATE IF NOT EXISTS table task (
+CREATE TABLE IF NOT EXISTS table task (
                       taskID INT PRIMARY KEY AUTO_INCREMENT,
                       taskName VARCHAR(255) NOT NULL,
                       description TEXT,
